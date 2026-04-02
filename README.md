@@ -1,4 +1,5 @@
 # AMUO-Fusion: Animal-Derived Natural Medicines Unpleasant-Odor Fusion (AMUO-Fusion) model #
+<img width="2554" height="1332" alt="image" src="https://github.com/user-attachments/assets/e304998d-ee8a-4672-ac07-d59232e67a73" />
 
 # Overview #
 AMUO-Fusion is a machine learning model for predicting the odor classification of volatile compounds. The model combines molecular fingerprints (PubChem, MACCS, FCFP) with odor descriptor features to classify compounds into categories of unpleasant and neutral or pleasant. 
@@ -6,11 +7,11 @@ AMUO-Fusion is a machine learning model for predicting the odor classification o
 # Requirement #
 Python 3.10+
 Required packages (install via pip):
-- pandas (>=3.0.2)
-- numpy (>=2.4.4)
-- scikit_learn (>=1.8.0)
-- rdkit (>=2024.3.3)
-- joblib (>=1.4.2)
+- **pandas** (>=3.0.2)
+- **numpy** (>=2.4.4)
+- **scikit_learn** (>=1.8.0)
+- **rdkit** (>=2024.3.3)
+- **joblib** (>=1.4.2)
 
 # Data Preparation #
 Prepare your input data in Excel format with the following columns (see Example data.xlsx):
@@ -19,9 +20,9 @@ Prepare your input data in Excel format with the following columns (see Example 
 
 # Running Predictions #
 Modify the following paths in AMUO-Fusion_Prediction.py, then run the script:
-MODEL_PATH = r"C:\...\...\AMUO-Fusion.pkl"
-DATA_PATH = r"C:\...\...\Example data.xlsx"
-RESULT_PATH = r"C:\...\...\Prediction results of Volatile Compounds without Odor Annotation.xlsx"
+- **MODEL_PATH** = r"C:\...\...\AMUO-Fusion.pkl"
+- **DATA_PATH** = r"C:\...\...\Example data.xlsx"
+- **RESULT_PATH** = r"C:\...\...\Prediction results of Volatile Compounds without Odor Annotation.xlsx"
 
 # Output #
 The script generates an Excel file with the following columns:
@@ -29,6 +30,6 @@ The script generates an Excel file with the following columns:
 - **Predicted_Class**: Predicted category (0 or 1)
 - **Probability_Class0**: Probability of belonging to class 0 (neutral or pleasant odor)
 - **Probability_Class1**: Probability of belonging to class 1 (unpleasant odor)
-- Odor descriptors' columns
+- **Odor descriptors' columns**
 
 
