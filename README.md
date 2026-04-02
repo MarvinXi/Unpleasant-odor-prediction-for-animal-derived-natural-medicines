@@ -1,5 +1,6 @@
 # AMUO-Fusion: Animal-Derived Natural Medicines Unpleasant-Odor Fusion (AMUO-Fusion) model #
-<img width="2554" height="1332" alt="image" src="https://github.com/user-attachments/assets/e304998d-ee8a-4672-ac07-d59232e67a73" />
+<img width="2000" height="1027" alt="image" src="https://github.com/user-attachments/assets/047d64ee-4f70-4e73-871f-9cb845a9941a" />
+
 
 # Overview #
 AMUO-Fusion is a machine learning model for predicting the odor classification of volatile compounds. The model combines molecular fingerprints (PubChem, MACCS, FCFP) with odor descriptor features to classify compounds into categories of unpleasant and neutral or pleasant. 
